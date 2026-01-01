@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veil</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <h1>Veil</h1>
+        <span class="tagline">Calm your feed</span>
+      </div>
+      <label class="toggle">
+        <input type="checkbox" id="enabled">
+        <span class="slider"></span>
+      </label>
+    </header>
+
+    <section class="setting-group">
+      <label class="setting-label">Mode</label>
+      <div class="mode-options">
+        <button class="mode-btn active" data-mode="text">
+          <span class="mode-icon">Aa</span>
+          <span class="mode-name">Text</span>
+        </button>
+        <button class="mode-btn" data-mode="film">
+          <span class="mode-icon">▮▮</span>
+          <span class="mode-name">Film</span>
+        </button>
+        <button class="mode-btn" data-mode="solid">
+          <span class="mode-icon">■</span>
+          <span class="mode-name">Solid</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="setting-group" id="text-options">
+      <label class="setting-label">Typeface</label>
+      <div class="font-options">
+        <button class="font-btn active" data-font="cormorant">
+          <span style="font-family: 'Cormorant Garamond', serif;">Cormorant</span>
+        </button>
+        <button class="font-btn" data-font="system">
+          <span style="font-family: -apple-system, 'SF Pro Display', sans-serif;">System</span>
+        </button>
+        <button class="font-btn" data-font="futura">
+          <span style="font-family: 'Jost', Futura, sans-serif;">Futura</span>
+        </button>
+        <button class="font-btn" data-font="cursive">
+          <span style="font-family: 'Dancing Script', cursive;">Script</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="setting-group">
+      <label class="setting-label">Display</label>
+      <div class="toggle-options">
+        <label class="toggle-row">
+          <span>Show channel name</span>
+          <input type="checkbox" id="showChannel" checked>
+          <span class="mini-toggle"></span>
+        </label>
+        <label class="toggle-row">
+          <span>Show duration</span>
+          <input type="checkbox" id="showDuration" checked>
+          <span class="mini-toggle"></span>
+        </label>
+        <label class="toggle-row">
+          <span>Noise texture</span>
+          <input type="checkbox" id="showNoise" checked>
+          <span class="mini-toggle"></span>
+        </label>
+        <label class="toggle-row">
+          <span>Color accent from video</span>
+          <input type="checkbox" id="accentFromHash">
+          <span class="mini-toggle"></span>
+        </label>
+        <label class="toggle-row">
+          <span>Hide channel avatars</span>
+          <input type="checkbox" id="hideChannelAvatars">
+          <span class="mini-toggle"></span>
+        </label>
+      </div>
+    </section>
+
+    <section class="setting-group">
+      <label class="setting-label">Preview</label>
+      <div class="preview-card" id="preview">
+        <div class="preview-noise"></div>
+        <div class="preview-content">
+          <h3 class="preview-title">The Architecture of Silence: A Study in Negative Space</h3>
+          <span class="preview-channel">Design Chronicles</span>
+        </div>
+        <span class="preview-duration">12:34</span>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-links">
+        <a href="https://ko-fi.com/D1D21REFY2" target="_blank" class="footer-link">Support</a>
+        <span class="footer-divider">•</span>
+        <a href="https://gist.github.com/icar1an/bd78022b21b558ee0865494649f9b303" target="_blank"
+          class="footer-link">Privacy</a>
+      </div>
+    </footer>
+  </div>
+
+
+  <script src="popup.js"></script>
+</body>
+
+</html>
