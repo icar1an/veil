@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Veil",
-  "version": "0.1.1",
-  "description": "Replace YouTube thumbnails with minimal typographic cards",
+  "name": "Veil - Minimalist YouTube Thumbnail Blocker",
+  "version": "0.1.2",
+  "description": "Replace YouTube thumbnails with minimal typographic cards, reclaim your attention.",
   "permissions": [
     "storage"
   ],
